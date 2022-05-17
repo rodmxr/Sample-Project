@@ -4,15 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Online Store</title>
+	<title>All Products - Online Store</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Overpass:wght@300;600&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
- 	<div class="header">
 	<div class="container">
 		<div class="navbar">
 		<div class="logo">
@@ -29,46 +27,25 @@
 		</nav>
 		<img src="images/cart.png" width="30px" height="30px">
 		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>	
 	</div>
-	<div class="row">
-		<div class="col-2">
-			<h1>Always wear on its sickest way</h1>
-			<p>Life is worth living <br> Justin bieber</p>
-			<a href="#" class="btn">Explore Now &#8594;<a/>
-		</div>
-		<div class="col-2">
-			<img src="images/2.jpg">
-		</div>
-	</div>
-	</div>
-</div>
 
-<!----featured catergories ------>
-	<div class="categories">
-		<div class="small-container">
-			<div class="row">
-		<div class="col-3"> 
-			<img src="images/category-1.jpg" alt="">
-			<h5>Air Jordan 1 x Travis Scott</h5>
-		</div>
-		<div class="col-3">
-		<img src="images/category-2.jpg" alt="">
-		<h6>Air Jordan 1 x Dior</h6>
-		</div>
-		<div class="col-3">
-		<img src="images/category-3.jpg" alt=""> 
-		<h7>Air Jordan 1 x Travis Scott x Fragment</h7> 
-		</div>
-
-	</div>
-		</div>
-	
-
-</div>
-
-<!----featured products ------>
 	<div class="small container"> 
-		<h2 class="title">Featured Products</h2>
+
+		<div class="row row-2">
+			<h2>All Products</h2>
+			<select>
+				<option>Defaul Sorting</option>
+				<option>Sort by Price</option>
+				<option>Sort by Popularity</option>
+				<option>Sort by Rating</option>
+				<option>Sort by Sale</option>
+			</select>
+
+			
+		</div>
+
+
 		<div class="row">
 			<div class="col-4">
 				<img src="images/product-1.jpg">
@@ -119,7 +96,6 @@
 				<p>7999.99 Pesos</p>
 			</div>
 		</div>
-		<h2 class="title">Latest Products</h2>
 		<div class="row">
 			<div class="col-4">
 				<img src="images/product-5.jpg">
@@ -170,94 +146,7 @@
 				<p>7999.99 Pesos</p>
 			</div>
 		</div>
-
-	</div>
-	<!---------offer -------------------->
-	<div class="offer">
-		<div class="small-container">
-			<div class="row">
-				<div class="col-2">
-					<img src="images/exclusive.png" class="offer-img">
-				</div>
-				<div class="col-2">
-					<p>Exclusively Available on Sneaker Society</p>
-					<h1>Jordan 1 Low x Travis Scott "Reverse Mocha"</h1>
-					<small>Each low-top Air Jordan 1 will feature a similar design as the first two releases. An oversized backward facing Swoosh featured on the lateral, while a regular Swoosh graces the medial. Signature Travis Scott details will include the “Cactus Jack” logo appearing on the tongue, medial side panel and sockliner. The back heel tabs will be branded with Air Jordan Wings on the right and Scott’s crudely drawn face on the left shoe.
-					</small>
-					<a href="" class="btn">Buy Now &#8594;</a>
-				</div>
-				
-			</div>
-	  	</div>
-	</div>
-	<!----------------------->
-	<div class="testimonial">
-		<div class="small-container">
-			<div class="row">
-				<div class="col-3">
-					<i class="fa fa-quote-left"></i>
-					<p>Norem ako dito madami</p>
-					<div class="rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div>
-				<img src="images/user-1.jpg">
-				<h3>Rodmar Salvacion</h3>
-				</div>
-				<div class="col-3">
-					<i class="fa fa-quote-left"></i>
-					<p>Norem ako dito madami</p>
-					<div class="rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div>
-				<img src="images/user-2.jpg">
-				<h3>Lyka Marie Chavez</h3>
-				</div>
-				<div class="col-3">
-					<i class="fa fa-quote-left"></i>
-					<p>Norem ako dito madami</p>
-					<div class="rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div>
-				<img src="images/user-3.jpg">
-				<h3>Jovel Agapay</h3>
-				</div>				
-			</div>
-		</div>
-	</div>
-
-<!-------------brands ------------------>
-	<div class="brands">
-		<div class="small-container">
-			<div class="row">
-				<div class="col-5">
-					<img src="images/jordan.png">
-				</div>
-				<div class="col-5">
-					<img src="images/nike.png">
-				</div>
-				<div class="col-5">
-					<img src="images/adidas.png">
-				</div>
-				<div class="col-5">
-					<img src="images/curry.png">
-				</div>
-				<div class="col-5">
-					<img src="images/kobe.png">
-				</div>
-			</div>
-		</div>
+		
 	</div>
 	<!--------------footer--------->
 	<div class="footer">
