@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>	
 	<title>Product Details - Sneaker Society</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Overpass:wght@300;600&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<?php include('./components/header.php') ?>
 </head>
 <body style="background-color:#3C6979;">
 
 	<div class="container">
 		<div class="navbar">
 		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" width="125px"></a>
+			<a href="index.php"><img src="images/logo.png" width="125px"></a>
 		</div>
-		<nav>
-			<ul id="MenuItems">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="products.html">PRODUCTS</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-				<li><a href="account.html">ACCOUNT</a></li>
-			</ul>
-		</nav>
-		<a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+		<?php include('./components/nav.php') ?>
+		<a href="cart.php"><img src="images/cart.png" width="30px" height="30px"></a>
 		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
 		</div>	
 	</div>
@@ -148,92 +134,13 @@
 
 	</div>
 	<!--------------footer--------->
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="footer-col-1">
-					<h3>Download Our App</h3>
-					<p>Donwload App for Android and IOS</p>
-					<div class="app-logo">
-						<a href="social.html"><img src="images/play-store.png"></a>
-						<a href="social.html"><img src="images/app-store.png"></a>
-					</div>
-				</div>
-				<div class="footer-col-2">
-					<img src="images/logo-1.png">
-				</div>
-				<div class="footer-col-3">
-					<h3>Links</h3>
-					<ul>
-						<a href="index.html"><li>Home</li></a>
-						<li>Blog Post</li>
-						<li>Return Policy</li>
-						<li>Join Community</li>
-					</ul>
-				</div>
-				<div class="footer-col-4">
-					<h3>Follow us</h3>
-					<ul>
-						<li>Facebook</li>
-						<li>Twitter</li>
-						<li>Instagram</li>
-						<li>Youtube</li>
-					</ul>
-				</div>
-			</div>
-			<hr>
-			<p class="copyright">Copyright 2022 - IT STUDENTS</p>
-
-		</div>
-	</div>
+	<?php include('./components/footer.php') ?>
 <!---------js for toggle menu---------->
-	<script>
-		var MenuItems = document.getElementById("MenuItems");
-
-		MenuItems.style.maxHeight = "0px";
-
-		function menutoggle(){
-			if(MenuItems.style.maxHeight == "0px")
-			{
-				MenuItems.style.maxHeight = "200px";
-			}
-			else
-			{
-				MenuItems.style.maxHeight = "0px";
-			}
-
-		}
-
-	</script>
+	<?php include('./javascript/menu.js') ?>
 
 	<!----------js for product gallery ------------->
 
-		<script>
-			var ProductImg = document.getElementById("ProductImg");
-			var SmallImg = document.getElementsByClassName("small-img");
-
-			SmallImg[0].onclick = function()
-			{
-				ProductImg.src = SmallImg[0].src;
-			}
-			SmallImg[1].onclick = function()
-			{
-				ProductImg.src = SmallImg[1].src;
-			}
-			SmallImg[2].onclick = function()
-			{
-				ProductImg.src = SmallImg[2].src;
-			}
-			SmallImg[3].onclick = function()
-			{
-				ProductImg.src = SmallImg[3].src;
-			}
-
-
-
-
-		</script>
-
+		<?php include('./javascript/productdetails.js') ?>
 
 </body>
 </html>

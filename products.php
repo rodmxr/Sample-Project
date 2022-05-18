@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>All Products - Sneaker Society</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Overpass:wght@300;600&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<?php include('./components/header.php') ?>
 </head>
 <body style="background-color:#3C6979;">
 
 	<div class="container">
 		<div class="navbar">
 		<div class="logo">
-			<img src="images/logo.png" width="125px">
+			<a href="index.php"><img src="images/logo.png" width="125px"></a>
 		</div>
-		<nav>
-			<ul id="MenuItems">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="products.html">PRODUCTS</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-				<li><a href="account.html">ACCOUNT</a></li>
-			</ul>
-		</nav>
-		<a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+		<?php include('./components/nav.php') ?>
+		<a href="cart.php"><img src="images/cart.png" width="30px" height="30px"></a>
 		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
 		</div>	
 	</div>
@@ -49,7 +35,7 @@
 
 		<div class="row">
 			<div class="col-4">
-				<a href="product-details1.html"><img src="images/product-1.jpg"></a>
+				<a href="product-details1.php"><img src="images/product-1.jpg"></a>
 				<h4>Kyrie 7 "Weatherman"</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
@@ -61,7 +47,7 @@
 				<p>₱7590</p>
 			</div>
 			<div class="col-4">
-				<a href="product-details2.html"><img src="images/product-2.jpg"></a>
+				<a href="product-details2.php"><img src="images/product-2.jpg"></a>
 				<h4>Kobe 6 "Grinch"</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
@@ -73,7 +59,7 @@
 				<p>₱8799.99</p>
 			</div>
 			<div class="col-4">
-				<a href="product-details3.html"><img src="images/product-3.jpg"></a>
+				<a href="product-details3.php"><img src="images/product-3.jpg"></a>
 				<h4>Nike Zoom Freak 3 "Aqua"</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
@@ -85,7 +71,7 @@
 				<p>₱6,389.00</p>
 			</div>
 			<div class="col-4">
-				<a href="product-details4.html"><img src="images/product-4.jpg"></a>
+				<a href="product-details4.php"><img src="images/product-4.jpg"></a>
 				<h4>Rick and Morty x Puma MB.01</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
@@ -99,7 +85,7 @@
 		</div>
 		<div class="row">
 			<div class="col-4">
-				<a href="product-details5.html"><img src="images/product-5.jpg"></a>
+				<a href="product-details5.php"><img src="images/product-5.jpg"></a>
 				<h4>Curry 9 "Sesame Street"</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
@@ -123,7 +109,7 @@
 				<p>₱8799.99</p>
 			</div>
 			<div class="col-4">
-				<a href="product-details7.html"><img src="images/product-7.jpg"></a>
+				<a href="product-details7.php"><img src="images/product-7.jpg"></a>
 				<h4>Yeezy 700</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
@@ -135,7 +121,7 @@
 				<p>₱35,875</p>
 			</div>
 			<div class="col-4">
-				<a href="product-details8.html"><img src="images/product-8.jpg"></a>
+				<a href="product-details8.php"><img src="images/product-8.jpg"></a>
 				<h4>Nike SB Dunk Low "Ben and Jerrys"</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
@@ -147,7 +133,7 @@
 				<p>₱5,240.50</p>
 			</div>
 			<div class="col-4">
-				<a href="product-details9.html"><img src="images/product-9.jpg"></a>
+				<a href="product-details9.php"><img src="images/product-9.jpg"></a>
 				<h4>Nike Air Force 1</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
@@ -196,71 +182,17 @@
 			</div>
 		</div>
 		<div class="page-btn">
-			<a href="products.html"><span>1</span></a>
-			<a href="products2.html"><span>2</span></a>
-			<a href="products3.html"><span>3</span></a>
-			<a href="products4.html"><span>4</span></a>
+			<a href="products.php"><span>1</span></a>
+			<a href="products2.php"><span>2</span></a>
+			<a href="products3.php"><span>3</span></a>
+			<a href="products4.php"><span>4</span></a>
 			<span>&#8594;</span>
 		</div>
 	</div>
 	<!--------------footer--------->
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="footer-col-1">
-					<h3>Download Our App</h3>
-					<p>Donwload App for Android and IOS</p>
-					<div class="app-logo">
-						<a href="social.html"><img src="images/play-store.png"></a>
-						<a href="social.html"><img src="images/app-store.png"></a>
-					</div>
-				</div>
-				<div class="footer-col-2">
-					<img src="images/logo-1.png">
-				</div>
-				<div class="footer-col-3">
-					<h3>Links</h3>
-					<ul>
-						<a href="index.html"><li>Home</li></a>
-						<li>Blog Post</li>
-						<li>Return Policy</li>
-						<li>Join Community</li>
-					</ul>
-				</div>
-				<div class="footer-col-4">
-					<h3>Follow us</h3>
-					<ul>
-						<li>Facebook</li>
-						<li>Twitter</li>
-						<li>Instagram</li>
-						<li>Youtube</li>
-					</ul>
-				</div>
-			</div>
-			<hr>
-			<p class="copyright">Copyright 2022 - IT STUDENTS</p>
-
-		</div>
-	</div>
+	<?php include('./components/footer.php') ?>
 <!---------js for toggle menu---------->
-	<script>
-		var MenuItems = document.getElementById("MenuItems");
-
-		MenuItems.style.maxHeight = "0px";
-
-		function menutoggle(){
-			if(MenuItems.style.maxHeight == "0px")
-			{
-				MenuItems.style.maxHeight = "200px";
-			}
-			else
-			{
-				MenuItems.style.maxHeight = "0px";
-			}
-
-		}
-
-	</script>
+	<?php include('./javascript/menu.js') ?>
 
 
 </body>
