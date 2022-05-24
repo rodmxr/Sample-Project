@@ -189,6 +189,14 @@
 			<span>&#8594;</span>
 		</div>
 	</div>
+	
+	<!-----------Product List Info------------>
+	<?php
+	$item= simplexml_load_file("Salvacion_IT2F_OnlineStore.xml"); 
+	echo $item-> product[0]->name;
+	?>
+
+
 	<!--------------footer--------->
 	<?php include('./components/footer.php') ?>
 <!---------js for toggle menu---------->

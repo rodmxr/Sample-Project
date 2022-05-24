@@ -245,6 +245,13 @@
 			</div>
 		</div>
 	</div>
+
+	<!-----------Product List Info------------>
+	<h1 class="title"><?php
+	$item= simplexml_load_file('data/Salvacion_IT2F_OnlineStore.xml'); 
+	echo $item-> product[0]->name;
+	?></h1>
+
 	<!--------------footer--------->
 	<?php include('./components/footer.php') ?>
 <!---------js for toggle menu---------->
